@@ -1,27 +1,32 @@
 # Hazardous Chemicals in CA Cosmetics
 
-**UCLA Stats 20**
+**UCLA Stats 20 | Group 33 | Fall 2025**
 
-Vivian Meng, Brooke Franaszek, Carly Quach
+Brooke Franaszek, Carly Quach, Vivian Meng
 
 ## Overview
-Cleaned and analyzed a dataset from the California Safe Cosmetics Program 
-to uncover patterns in hazardous chemical usage across cosmetic product 
-categories and brands.
+Cleaned and analyzed a 16,500+ observation dataset from the California Safe 
+Cosmetics Program to uncover patterns in hazardous chemical usage across 
+cosmetic product categories and brands.
+
+## Dataset
+Publicly available data from the California Safe Cosmetics Program (included 
+as `cscpopendata.csv`).
 
 ## Tools Used
 - R (ggplot2, dplyr)
 - R Markdown
 
-## Dataset
-16,500+ observations from the California Safe Cosmetics Program (publicly 
-available). Data required cleaning for missing values, date formatting, 
-and filtering prior to analysis.
-
 ## Key Findings
-- Identified patterns in chemical usage across product categories and brands
-- Applied correlation testing, logistic regression, chi-square, and ANOVA 
-  to uncover statistically significant relationships
+- Titanium dioxide dominated chemical reports by a significant margin
+- Makeup products contained the most reported hazardous chemicals
+- Reporting peaked in 2009, then declined and stabilized
+- Newer products tend to have slightly more chemicals (r ≈ 0.127, p < 0.001)
+- Products without chemicals were more likely to be discontinued 
+  (24.6% vs. 11.2% chance, logistic regression)
+- Hair coloring and makeup products showed the widest chemical count 
+  distributions (ANOVA)
 
 ## How to Run
-Open the `.Rmd` file in RStudio and knit to run the full analysis.
+Open `group33_report.rmd` in RStudio and knit to run the full analysis.
+Make sure `cscpopendata.csv` is in the same folder as the .Rmd file.
