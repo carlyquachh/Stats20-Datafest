@@ -10,8 +10,9 @@ Cosmetics Program to uncover patterns in hazardous chemical usage across
 cosmetic product categories and brands.
 
 ## Dataset
-Publicly available data from the California Safe Cosmetics Program (included 
-as `cscpopendata.csv`).
+Publicly available from the 
+[California Safe Cosmetics Program](https://www.cdph.ca.gov/Programs/CCDPHP/DEODC/OHB/CSCP/Pages/CSCP.aspx).
+Download the data and place it in the same folder as the .Rmd file before running.
 
 ## Tools Used
 - R (ggplot2, dplyr)
